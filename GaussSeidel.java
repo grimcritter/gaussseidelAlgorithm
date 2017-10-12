@@ -62,45 +62,12 @@ public class GaussSeidel {
         double err = 0f;
         for(int i=0 ; i < prevX.length ; i++){
             err=Math.abs((X[i]-prevX[i])/X[i])*100;
+            System.out.printf("%16.4fP",err);
             if(err>maxErr){
                 maxErr = err;
             }
         }
-        
-        //if(maxErr<eps) return true;
         return maxErr;
     }
 
 }
-
-//        double[][] equation = {{12,3,-5,1},
-//                               {1,5,3,28},
-//                               {3,7,13,76}};
-
-//        double[][] equation = {{2,2,-1,3},
-//                               {3,-2,2,10},
-//                               {1,3,-3,-4}};
-
-//        double[][] equation = {{12,3,-5,1},
-//                               {1,5,3,28},
-//                               {3,7,13,76}};
-//        double[][] equation = {{3,7,13,76},
-//                               {1,5,3,28},
-//                               {12,3,-5,1}};
-
-//        double[][] equation = {{25,5,1,106.8},
-//                               {64,8,1,177.2},
-//                               {144,12,1,279.2}};
-
-//        double[][] equation = {{144,12,1,279.2},
-//                               {64,8,1,177.2},
-//                               {25,5,1,106.8}};
-//            double[][] equation ={
-//            { 2, 3,  5,-5},
-//            { 1, 8,  0,28},
-//            { 1, 7, 13,76}};
-//        double[][] equation = {{5,1,2,76},
-//                               {3,6,3,1},
-//                               {1,3,23,-2}};
-//            double[][] equation = {{19,3,2,8},{4,3,1,10},{1,2,-3,4}};
-//double[][] equation = {{19,3,2,8},{4,6,1,10},{1,2,-3,10}};
