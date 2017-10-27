@@ -3,7 +3,7 @@ package gaussseidelMethod;
 
 import java.util.Arrays;
 
-
+//eiei
 public class GaussSeidel {
 
     public static void main(String[] args) {
