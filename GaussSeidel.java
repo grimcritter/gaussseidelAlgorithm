@@ -3,6 +3,7 @@ package gaussseidelMethod;
 
 import java.util.Arrays;
 
+//This code use for personal education
 
 public class GaussSeidel {
 
