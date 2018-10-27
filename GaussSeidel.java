@@ -62,7 +62,7 @@ public class GaussSeidel {
         double err = 0f;
         for(int i=0 ; i < prevX.length ; i++){
             err=Math.abs((X[i]-prevX[i])/X[i])*100;
-            System.out.printf("%16.4fP",err);
+            System.out.printf("%20.4fP",err);
             if(err>maxErr){
                 maxErr = err;
             }
