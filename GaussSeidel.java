@@ -20,7 +20,7 @@ public class GaussSeidel {
         double[] X = new double[size];
         X=init.clone();
         //Arrays.fill(X,0);
-        
+        //Arrays x to 0 
         int iterations = 0;
         double prevErr=0f,err=0f;
         
