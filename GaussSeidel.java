@@ -65,6 +65,7 @@ public class GaussSeidel {
             System.out.printf("%16.4fP",err);
             if(err>maxErr){
                 maxErr = err;
+                //System.out.println("GaussSeidel Hacktoberfest",maxErr);
             }
         }
         return maxErr;
