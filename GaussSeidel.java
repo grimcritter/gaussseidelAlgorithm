@@ -38,10 +38,10 @@ public class GaussSeidel {
                 X[i]=(1/equation[i][i])*variableValue;
                 System.out.printf(" %15.4f ",X[i]);
             }    
-            System.out.println("");
-            System.out.printf("Err => ");;
+//             System.out.println("");
+//             System.out.printf("Err => ");;
             err=checkErr(prevX, X, eps);
-            System.out.println("\n");
+//             System.out.println("\n");
             if(Math.abs(err)<eps) break;
             
             prevErr=err;
